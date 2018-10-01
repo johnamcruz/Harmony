@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75CF16E421609BE800005082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF16E321609BE800005082 /* AppDelegate.swift */; };
+		75CF16E921609BE800005082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CF16E721609BE800005082 /* Main.storyboard */; };
+		75CF16EB21609BE900005082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CF16EA21609BE900005082 /* Assets.xcassets */; };
+		75CF16EE21609BE900005082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CF16EC21609BE900005082 /* LaunchScreen.storyboard */; };
+		75CF16F62160A26C00005082 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF16F52160A26C00005082 /* UIColor+Additions.swift */; };
+		75CF16F82160AC1B00005082 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF16F72160AC1B00005082 /* DiscoveryViewController.swift */; };
+		75CF16FA2160ADD400005082 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF16F92160ADD400005082 /* LocationModel.swift */; };
+		75CF16FC2160B1AA00005082 /* DiscoveryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF16FB2160B1AA00005082 /* DiscoveryCell.swift */; };
+		75CF170121617F8500005082 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75CF170021617BF200005082 /* Montserrat-SemiBold.ttf */; };
+		75CF170221617F8500005082 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75CF16FF21617BEB00005082 /* Montserrat-Regular.ttf */; };
+		75CF170321617F8500005082 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75CF16FE21617BDD00005082 /* Montserrat-Medium.ttf */; };
+		75CF170A21618F7600005082 /* LocationApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF170921618F7600005082 /* LocationApiService.swift */; };
+		75CF170C2161B97F00005082 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF170B2161B97F00005082 /* FilterViewController.swift */; };
+		75CF170E2161CC2200005082 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF170D2161CC2200005082 /* ProfileViewController.swift */; };
+		75CF17112161DD8000005082 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF17102161DD8000005082 /* CustomSegmentedControl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		75CF16E021609BE800005082 /* Harmony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harmony.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CF16E321609BE800005082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75CF16E821609BE800005082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75CF16EA21609BE900005082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75CF16ED21609BE900005082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75CF16EF21609BE900005082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75CF16F52160A26C00005082 /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		75CF16F72160AC1B00005082 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		75CF16F92160ADD400005082 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		75CF16FB2160B1AA00005082 /* DiscoveryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryCell.swift; sourceTree = "<group>"; };
+		75CF16FE21617BDD00005082 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		75CF16FF21617BEB00005082 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		75CF170021617BF200005082 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		75CF170921618F7600005082 /* LocationApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationApiService.swift; sourceTree = "<group>"; };
+		75CF170B2161B97F00005082 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		75CF170D2161CC2200005082 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		75CF17102161DD8000005082 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75CF16DD21609BE800005082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75CF16D721609BE800005082 = {
+			isa = PBXGroup;
+			children = (
+				75CF16E221609BE800005082 /* Harmony */,
+				75CF16E121609BE800005082 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75CF16E121609BE800005082 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75CF16E021609BE800005082 /* Harmony.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75CF16E221609BE800005082 /* Harmony */ = {
+			isa = PBXGroup;
+			children = (
+				75CF170F2161D88E00005082 /* Controls */,
+				75CF17062161839500005082 /* Controllers */,
+				75CF1707216183AA00005082 /* Extensions */,
+				75CF16FD21617B7400005082 /* Fonts */,
+				75CF17042161838300005082 /* Models */,
+				75CF170821618F5700005082 /* Services */,
+				75CF17052161838A00005082 /* Views */,
+				75CF16E321609BE800005082 /* AppDelegate.swift */,
+				75CF16E721609BE800005082 /* Main.storyboard */,
+				75CF16EA21609BE900005082 /* Assets.xcassets */,
+				75CF16EC21609BE900005082 /* LaunchScreen.storyboard */,
+				75CF16EF21609BE900005082 /* Info.plist */,
+			);
+			path = Harmony;
+			sourceTree = "<group>";
+		};
+		75CF16FD21617B7400005082 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				75CF170021617BF200005082 /* Montserrat-SemiBold.ttf */,
+				75CF16FF21617BEB00005082 /* Montserrat-Regular.ttf */,
+				75CF16FE21617BDD00005082 /* Montserrat-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		75CF17042161838300005082 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				75CF16F92160ADD400005082 /* LocationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		75CF17052161838A00005082 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				75CF16FB2160B1AA00005082 /* DiscoveryCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		75CF17062161839500005082 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				75CF16F72160AC1B00005082 /* DiscoveryViewController.swift */,
+				75CF170B2161B97F00005082 /* FilterViewController.swift */,
+				75CF170D2161CC2200005082 /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		75CF1707216183AA00005082 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				75CF16F52160A26C00005082 /* UIColor+Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		75CF170821618F5700005082 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				75CF170921618F7600005082 /* LocationApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		75CF170F2161D88E00005082 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				75CF17102161DD8000005082 /* CustomSegmentedControl.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75CF16DF21609BE800005082 /* Harmony */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75CF16F221609BE900005082 /* Build configuration list for PBXNativeTarget "Harmony" */;
+			buildPhases = (
+				75CF16DC21609BE800005082 /* Sources */,
+				75CF16DD21609BE800005082 /* Frameworks */,
+				75CF16DE21609BE800005082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Harmony;
+			productName = Harmony;
+			productReference = 75CF16E021609BE800005082 /* Harmony.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75CF16D821609BE800005082 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "John M Cruz";
+				TargetAttributes = {
+					75CF16DF21609BE800005082 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 75CF16DB21609BE800005082 /* Build configuration list for PBXProject "Harmony" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75CF16D721609BE800005082;
+			productRefGroup = 75CF16E121609BE800005082 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75CF16DF21609BE800005082 /* Harmony */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75CF16DE21609BE800005082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CF170121617F8500005082 /* Montserrat-SemiBold.ttf in Resources */,
+				75CF170221617F8500005082 /* Montserrat-Regular.ttf in Resources */,
+				75CF170321617F8500005082 /* Montserrat-Medium.ttf in Resources */,
+				75CF16EE21609BE900005082 /* LaunchScreen.storyboard in Resources */,
+				75CF16EB21609BE900005082 /* Assets.xcassets in Resources */,
+				75CF16E921609BE800005082 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75CF16DC21609BE800005082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CF170C2161B97F00005082 /* FilterViewController.swift in Sources */,
+				75CF16FA2160ADD400005082 /* LocationModel.swift in Sources */,
+				75CF170A21618F7600005082 /* LocationApiService.swift in Sources */,
+				75CF16E421609BE800005082 /* AppDelegate.swift in Sources */,
+				75CF16FC2160B1AA00005082 /* DiscoveryCell.swift in Sources */,
+				75CF17112161DD8000005082 /* CustomSegmentedControl.swift in Sources */,
+				75CF16F82160AC1B00005082 /* DiscoveryViewController.swift in Sources */,
+				75CF170E2161CC2200005082 /* ProfileViewController.swift in Sources */,
+				75CF16F62160A26C00005082 /* UIColor+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75CF16E721609BE800005082 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75CF16E821609BE800005082 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75CF16EC21609BE900005082 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75CF16ED21609BE900005082 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75CF16F021609BE900005082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75CF16F121609BE900005082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75CF16F321609BE900005082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Harmony/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnamcruz.Harmony;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75CF16F421609BE900005082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Harmony/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnamcruz.Harmony;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75CF16DB21609BE800005082 /* Build configuration list for PBXProject "Harmony" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CF16F021609BE900005082 /* Debug */,
+				75CF16F121609BE900005082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75CF16F221609BE900005082 /* Build configuration list for PBXNativeTarget "Harmony" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CF16F321609BE900005082 /* Debug */,
+				75CF16F421609BE900005082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75CF16D821609BE800005082 /* Project object */;
+}
