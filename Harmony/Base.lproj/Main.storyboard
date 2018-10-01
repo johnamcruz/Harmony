@@ -142,7 +142,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="377"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="eHb-IF-2TB">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="eHb-IF-2TB">
                             <size key="itemSize" width="163" height="223"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -151,22 +151,19 @@
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="LocationCell" id="POn-hV-N7w" customClass="LocationCell" customModule="Harmony" customModuleProvider="target">
                                 <rect key="frame" x="20" y="10" width="163" height="223"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="163" height="223"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Ybo-oe-l9q">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ybo-oe-l9q">
                                             <rect key="frame" x="0.0" y="0.0" width="163" height="160"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" priority="250" constant="160" id="K4C-Vw-ceI"/>
+                                                <constraint firstAttribute="height" constant="160" id="Itr-WC-hVM"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OR3-v6-h58">
-                                            <rect key="frame" x="22" y="170" width="119" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="b8c-m5-0eW"/>
-                                            </constraints>
+                                            <rect key="frame" x="22" y="170" width="119" height="17.333333333333343"/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -174,12 +171,12 @@
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="Ybo-oe-l9q" firstAttribute="leading" secondItem="POn-hV-N7w" secondAttribute="leading" id="3Vj-VZ-jaB"/>
-                                    <constraint firstItem="Ybo-oe-l9q" firstAttribute="top" secondItem="POn-hV-N7w" secondAttribute="top" id="Eg3-YJ-r43"/>
-                                    <constraint firstItem="OR3-v6-h58" firstAttribute="top" secondItem="Ybo-oe-l9q" secondAttribute="bottom" constant="10" id="a0a-KI-1Nn"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ybo-oe-l9q" secondAttribute="trailing" id="oxS-8m-UeM"/>
-                                    <constraint firstItem="OR3-v6-h58" firstAttribute="leading" secondItem="POn-hV-N7w" secondAttribute="leadingMargin" constant="14" id="sJh-33-vtj"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="OR3-v6-h58" secondAttribute="trailing" constant="14" id="zfB-RW-7Sl"/>
+                                    <constraint firstItem="OR3-v6-h58" firstAttribute="top" secondItem="POn-hV-N7w" secondAttribute="top" constant="170" id="8eu-w0-Mmd"/>
+                                    <constraint firstItem="Ybo-oe-l9q" firstAttribute="leading" secondItem="POn-hV-N7w" secondAttribute="leading" id="MvO-nq-VyQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ybo-oe-l9q" secondAttribute="trailing" id="PIk-sZ-WO1"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="OR3-v6-h58" secondAttribute="trailing" constant="14" id="aDS-lv-U5R"/>
+                                    <constraint firstItem="Ybo-oe-l9q" firstAttribute="top" secondItem="POn-hV-N7w" secondAttribute="top" id="dgG-24-Aq1"/>
+                                    <constraint firstItem="OR3-v6-h58" firstAttribute="leading" secondItem="POn-hV-N7w" secondAttribute="leadingMargin" constant="14" id="vwb-yl-kix"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="Ybo-oe-l9q" id="w9m-Mh-l5z"/>
