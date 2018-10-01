@@ -1,14 +1,16 @@
 //
-//  DiscoveryCell.swift
+//  LocationCell.swift
 //  Harmony
 //
-//  Created by John M Cruz on 9/29/18.
+//  Created by John M Cruz on 9/30/18.
 //  Copyright © 2018 John M Cruz. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class DiscoveryCell: CardCell {
+class LocationCell : CardCell {
+    
     @IBOutlet weak private var imageView: UIImageView!
     @IBOutlet weak private var titleLabel: UILabel!
     

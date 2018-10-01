@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-@IBDesignable
 class CustomSegmentedControl : UISegmentedControl {
     var buttonBar = UIView()
     

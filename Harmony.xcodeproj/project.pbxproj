@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7565A9A4216200AF00B29971 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565A9A3216200AF00B29971 /* LocationViewController.swift */; };
+		7565A9A62162058C00B29971 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565A9A52162058C00B29971 /* LocationCell.swift */; };
+		7565A9A8216205DC00B29971 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565A9A7216205DC00B29971 /* CardCell.swift */; };
 		75CF16E421609BE800005082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF16E321609BE800005082 /* AppDelegate.swift */; };
 		75CF16E921609BE800005082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CF16E721609BE800005082 /* Main.storyboard */; };
 		75CF16EB21609BE900005082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CF16EA21609BE900005082 /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7565A9A3216200AF00B29971 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		7565A9A52162058C00B29971 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		7565A9A7216205DC00B29971 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		75CF16E021609BE800005082 /* Harmony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harmony.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CF16E321609BE800005082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75CF16E821609BE800005082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				75CF16FB2160B1AA00005082 /* DiscoveryCell.swift */,
+				7565A9A52162058C00B29971 /* LocationCell.swift */,
+				7565A9A7216205DC00B29971 /* CardCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +130,7 @@
 				75CF16F72160AC1B00005082 /* DiscoveryViewController.swift */,
 				75CF170B2161B97F00005082 /* FilterViewController.swift */,
 				75CF170D2161CC2200005082 /* ProfileViewController.swift */,
+				7565A9A3216200AF00B29971 /* LocationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,10 +238,13 @@
 				75CF170A21618F7600005082 /* LocationApiService.swift in Sources */,
 				75CF16E421609BE800005082 /* AppDelegate.swift in Sources */,
 				75CF16FC2160B1AA00005082 /* DiscoveryCell.swift in Sources */,
+				7565A9A4216200AF00B29971 /* LocationViewController.swift in Sources */,
+				7565A9A62162058C00B29971 /* LocationCell.swift in Sources */,
 				75CF17112161DD8000005082 /* CustomSegmentedControl.swift in Sources */,
 				75CF16F82160AC1B00005082 /* DiscoveryViewController.swift in Sources */,
 				75CF170E2161CC2200005082 /* ProfileViewController.swift in Sources */,
 				75CF16F62160A26C00005082 /* UIColor+Additions.swift in Sources */,
+				7565A9A8216205DC00B29971 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
