@@ -69,8 +69,8 @@
                                     <constraint firstAttribute="width" constant="100" id="Zhy-ak-a3I"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peyton Cruz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Juf-Wj-yDb">
-                                <rect key="frame" x="114" y="245" width="147" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Juf-Wj-yDb">
+                                <rect key="frame" x="120" y="245" width="135" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="gsB-HT-2p0"/>
                                 </constraints>
@@ -127,7 +127,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="CdN-DN-x7h"/>
                     <connections>
+                        <outlet property="addressLabel" destination="crX-re-UuA" id="T1L-c5-Xws"/>
                         <outlet property="profileImageView" destination="ghL-Tk-PxN" id="eyZ-4m-gpN"/>
+                        <outlet property="userLabel" destination="Juf-Wj-yDb" id="V6N-jf-2PV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbp-X5-7X5" userLabel="First Responder" sceneMemberID="firstResponder"/>

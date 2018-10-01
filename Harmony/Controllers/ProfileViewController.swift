@@ -10,6 +10,10 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     @IBOutlet weak private var profileImageView: UIImageView!
+    @IBOutlet weak private var userLabel: UILabel!
+    @IBOutlet weak private var addressLabel: UILabel!
+    
+    var userApiService = UserApiService()
     
     var imageUrl : String! {
         didSet {
@@ -31,6 +35,16 @@ class ProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         imageUrl = "https://via.placeholder.com/100x100"
+        userApiService.getUsers(url: "http://jsonplaceholder.typicode.com/users", completion: { users in
+            if let user = users.first {
+                DispatchQueue.main.async {
+                    self.userLabel.text = user.name
+                    if let address = user.address?.city {
+                        self.addressLabel.text = address
+                    }
+                }
+            }
+        })
     }
 
     // MARK: - Navigation
