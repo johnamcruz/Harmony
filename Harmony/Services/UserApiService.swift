@@ -10,6 +10,7 @@ import Foundation
 
 protocol UserApiServiceDelegate {
     func getUsers(url: String, completion: @escaping ([UserModel]) -> Void)
+    func getUser(url: String, completion: @escaping (UserModel) -> Void)
 }
 
 class UserApiService {
@@ -26,5 +27,20 @@ class UserApiService {
                 print("Error", err)
             }
         }.resume()
+    }
+    
+    func getUser(url: String, completion: @escaping (UserModel) -> Void) {
+        guard let path = URL(string: url) else { return }
+        URLSession.shared.dataTask(with: path) { (data, response, error) in
+            guard let data = data else { return }
+            do {
+                let decoder = JSONDecoder()
+                let user = try decoder.decode(UserModel.self, from: data)
+                completion(user)
+                
+            } catch let err {
+                print("Error", err)
+            }
+            }.resume()
     }
 }
