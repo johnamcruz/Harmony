@@ -337,6 +337,35 @@
                                         <color key="textColor" red="0.37254901960784315" green="0.36470588235294116" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TtA-pH-U16" customClass="RatingsControl" customModule="Harmony" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="152" width="198" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="198" id="0bk-Xj-wSI"/>
+                                            <constraint firstAttribute="height" constant="30" id="Coh-4p-nn1"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="0.0" green="0.79215686269999996" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedColor">
+                                                <color key="value" red="0.60784313729999995" green="0.59999999999999998" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -344,11 +373,13 @@
                                     <constraint firstAttribute="trailing" secondItem="8xw-eL-f9E" secondAttribute="trailing" constant="20" id="5M8-Dy-3oV"/>
                                     <constraint firstAttribute="trailing" secondItem="ci1-48-rii" secondAttribute="trailing" constant="20" id="5hh-Om-dUZ"/>
                                     <constraint firstAttribute="trailing" secondItem="fA8-QT-ywu" secondAttribute="trailing" constant="20" id="61i-53-e1v"/>
+                                    <constraint firstItem="TtA-pH-U16" firstAttribute="leading" secondItem="Vrk-oB-39T" secondAttribute="leading" constant="22" id="6sw-TG-poH"/>
                                     <constraint firstItem="ci1-48-rii" firstAttribute="leading" secondItem="Vrk-oB-39T" secondAttribute="leading" constant="20" id="I9x-9b-5oV"/>
                                     <constraint firstAttribute="height" constant="320" id="IPG-ZR-GYI"/>
                                     <constraint firstItem="8xw-eL-f9E" firstAttribute="top" secondItem="ci1-48-rii" secondAttribute="bottom" constant="20" id="Kft-eA-xIX"/>
                                     <constraint firstItem="8xw-eL-f9E" firstAttribute="leading" secondItem="Vrk-oB-39T" secondAttribute="leading" constant="20" id="L53-Db-6A3"/>
                                     <constraint firstItem="fA8-QT-ywu" firstAttribute="leading" secondItem="Vrk-oB-39T" secondAttribute="leading" constant="20" id="TIM-cK-TZn"/>
+                                    <constraint firstItem="TtA-pH-U16" firstAttribute="top" secondItem="8xw-eL-f9E" secondAttribute="bottom" constant="13" id="XBQ-2u-HAH"/>
                                     <constraint firstItem="fA8-QT-ywu" firstAttribute="top" secondItem="Vrk-oB-39T" secondAttribute="top" constant="30" id="YmZ-u6-BDq"/>
                                 </constraints>
                             </view>

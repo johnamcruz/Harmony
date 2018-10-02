@@ -17,6 +17,15 @@ class CustomSegmentedControl : UISegmentedControl {
         setupControl()
     }
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupControl()
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        setupControl()
+    }
+    
     func setupControl() {
         self.backgroundColor = .clear
         self.tintColor = .clear
