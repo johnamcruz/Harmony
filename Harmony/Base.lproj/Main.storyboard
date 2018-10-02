@@ -88,7 +88,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="USe-m3-CY2" customClass="CustomSegmentedControl" customModule="Harmony" customModuleProvider="target">
-                                <rect key="frame" x="66" y="316" width="243" height="29"/>
+                                <rect key="frame" x="16" y="316" width="343" height="29"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="YRc-YS-ZrH"/>
@@ -114,13 +114,14 @@
                             <constraint firstItem="crX-re-UuA" firstAttribute="centerX" secondItem="Mlj-ZY-dca" secondAttribute="centerX" id="Js8-Om-snQ"/>
                             <constraint firstItem="Bo3-zv-VP2" firstAttribute="bottom" secondItem="kBN-9s-inb" secondAttribute="bottom" id="NaE-XC-gNt"/>
                             <constraint firstItem="Juf-Wj-yDb" firstAttribute="centerX" secondItem="Mlj-ZY-dca" secondAttribute="centerX" id="TVt-yZ-YaA"/>
-                            <constraint firstItem="USe-m3-CY2" firstAttribute="centerX" secondItem="Mlj-ZY-dca" secondAttribute="centerX" id="Vg3-Al-SdD"/>
+                            <constraint firstItem="kBN-9s-inb" firstAttribute="trailing" secondItem="USe-m3-CY2" secondAttribute="trailing" constant="16" id="ca2-AR-oKk"/>
                             <constraint firstItem="crX-re-UuA" firstAttribute="top" secondItem="Juf-Wj-yDb" secondAttribute="bottom" constant="7" id="e94-3P-RKp"/>
                             <constraint firstItem="Juf-Wj-yDb" firstAttribute="top" secondItem="ghL-Tk-PxN" secondAttribute="bottom" constant="26" id="jFv-71-mJD"/>
                             <constraint firstItem="Bo3-zv-VP2" firstAttribute="trailing" secondItem="kBN-9s-inb" secondAttribute="trailing" id="jd2-uu-pD4"/>
                             <constraint firstItem="Bo3-zv-VP2" firstAttribute="leading" secondItem="Mlj-ZY-dca" secondAttribute="leading" id="l6R-JT-2Wv"/>
                             <constraint firstItem="ghL-Tk-PxN" firstAttribute="centerX" secondItem="Mlj-ZY-dca" secondAttribute="centerX" id="nsX-3O-HCS"/>
                             <constraint firstItem="ghL-Tk-PxN" firstAttribute="top" secondItem="kBN-9s-inb" secondAttribute="top" constant="31" id="ot0-N5-UAn"/>
+                            <constraint firstItem="USe-m3-CY2" firstAttribute="leading" secondItem="kBN-9s-inb" secondAttribute="leading" constant="16" id="tV7-WQ-Dpj"/>
                             <constraint firstItem="USe-m3-CY2" firstAttribute="top" secondItem="crX-re-UuA" secondAttribute="bottom" constant="20" id="z94-iO-NGH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kBN-9s-inb"/>
