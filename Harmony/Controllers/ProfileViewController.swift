@@ -21,8 +21,7 @@ class ProfileViewController: UIViewController {
                 DispatchQueue.global().async {
                     let data = try? Data(contentsOf: url)
                     DispatchQueue.main.async {
-                        self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2;
-                        self.profileImageView.clipsToBounds = true
+                        self.profileImageView.createCircle(radius: self.profileImageView.frame.size.width / 2)
                         self.profileImageView.image = UIImage(data: data!)
                     }
                 }

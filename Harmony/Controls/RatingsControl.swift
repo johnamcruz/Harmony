@@ -12,15 +12,35 @@ import UIKit
 @IBDesignable
 class RatingsControl : UIControl {
     
-    @IBInspectable var selectedColor : UIColor = UIColor.greenBlue
+    @IBInspectable var selectedColor : UIColor = UIColor.greenBlue {
+        didSet {
+            
+        }
+    }
     
-    @IBInspectable var unselectedColor : UIColor = UIColor.paleGrey
+    @IBInspectable var unselectedColor : UIColor = UIColor.paleGrey {
+        didSet {
+            updateControl()
+        }
+    }
     
-    @IBInspectable var radius : CGFloat = 15.0
+    @IBInspectable var radius : CGFloat = 15.0 {
+        didSet {
+            updateControl()
+        }
+    }
     
-    @IBInspectable var spacing : CGFloat = 12.0
+    @IBInspectable var spacing : CGFloat = 12.0 {
+        didSet {
+            updateControl()
+        }
+    }
     
-    @IBInspectable var value : Int = 5
+    @IBInspectable var value : Int = 5 {
+        didSet {
+            updateControl()
+        }
+    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -35,6 +55,24 @@ class RatingsControl : UIControl {
     override func prepareForInterfaceBuilder() {
         setupControl()
     }
+    
+    func updateControl() {
+        if let stackView = self.subviews.first as? UIStackView {
+            stackView.spacing = spacing
+            for (index,view) in stackView.subviews.enumerated() {
+                view.createCircle(radius: radius)
+                view.backgroundColor =  index <= value ? selectedColor : unselectedColor
+                let size = radius * 2
+                view.removeConstraints(view.constraints)
+                view.heightAnchor.constraint(equalToConstant: size).isActive = true
+                view.widthAnchor.constraint(equalToConstant: size).isActive = true
+                view.translatesAutoresizingMaskIntoConstraints = false
+            }
+        }
+        else {
+            setupControl()
+        }
+    }
 
     func setupControl() {
         let stackView = UIStackView()
@@ -47,8 +85,7 @@ class RatingsControl : UIControl {
         for index in 1...5 {
             let view = UIView()
             view.backgroundColor = index <= value ? selectedColor : unselectedColor
-            view.layer.cornerRadius = self.radius
-            view.clipsToBounds = true
+            view.createCircle(radius: self.radius)
             let size = radius * 2
             view.heightAnchor.constraint(equalToConstant: size).isActive = true
             view.widthAnchor.constraint(equalToConstant: size).isActive = true

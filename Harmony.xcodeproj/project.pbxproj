@@ -14,6 +14,7 @@
 		7566D2472162138800928DCE /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7566D2462162138800928DCE /* AddressModel.swift */; };
 		7566D2492162149100928DCE /* UserApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7566D2482162149100928DCE /* UserApiService.swift */; };
 		7566D24B2163473A00928DCE /* RatingsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7566D24A2163473A00928DCE /* RatingsControl.swift */; };
+		7566D24D2163602A00928DCE /* UIView+Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7566D24C2163602A00928DCE /* UIView+Circle.swift */; };
 		75CF16E421609BE800005082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF16E321609BE800005082 /* AppDelegate.swift */; };
 		75CF16E921609BE800005082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CF16E721609BE800005082 /* Main.storyboard */; };
 		75CF16EB21609BE900005082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CF16EA21609BE900005082 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		7566D2462162138800928DCE /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		7566D2482162149100928DCE /* UserApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiService.swift; sourceTree = "<group>"; };
 		7566D24A2163473A00928DCE /* RatingsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsControl.swift; sourceTree = "<group>"; };
+		7566D24C2163602A00928DCE /* UIView+Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Circle.swift"; sourceTree = "<group>"; };
 		75CF16E021609BE800005082 /* Harmony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harmony.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CF16E321609BE800005082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75CF16E821609BE800005082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				75CF16F52160A26C00005082 /* UIColor+Additions.swift */,
+				7566D24C2163602A00928DCE /* UIView+Circle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				7565A9A62162058C00B29971 /* LocationCell.swift in Sources */,
 				75CF17112161DD8000005082 /* CustomSegmentedControl.swift in Sources */,
 				75CF16F82160AC1B00005082 /* DiscoveryViewController.swift in Sources */,
+				7566D24D2163602A00928DCE /* UIView+Circle.swift in Sources */,
 				75CF170E2161CC2200005082 /* ProfileViewController.swift in Sources */,
 				75CF16F62160A26C00005082 /* UIColor+Additions.swift in Sources */,
 				7566D2472162138800928DCE /* AddressModel.swift in Sources */,

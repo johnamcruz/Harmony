@@ -170,14 +170,53 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3J-PD-ZsI" customClass="RatingsControl" customModule="Harmony" customModuleProvider="target">
+                                            <rect key="frame" x="22" y="195.33333333333334" width="56" height="10"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="10" id="OAX-Lz-Bdu"/>
+                                                <constraint firstAttribute="width" constant="56" id="Twk-bJ-YPP"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                    <color key="value" red="0.0" green="0.79215686269999996" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="unselectedColor">
+                                                    <color key="value" red="0.60784313729999995" green="0.59999999999999998" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5/5.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ji1-WZ-pqv">
+                                            <rect key="frame" x="86" y="194" width="57" height="14"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="14" id="Azm-8I-O7t"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="11"/>
+                                            <color key="textColor" red="0.37254901959999998" green="0.36470588240000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
+                                    <constraint firstItem="ji1-WZ-pqv" firstAttribute="leading" secondItem="r3J-PD-ZsI" secondAttribute="trailing" constant="8" id="3XM-09-dPW"/>
                                     <constraint firstItem="OR3-v6-h58" firstAttribute="top" secondItem="POn-hV-N7w" secondAttribute="top" constant="170" id="8eu-w0-Mmd"/>
+                                    <constraint firstItem="r3J-PD-ZsI" firstAttribute="top" secondItem="OR3-v6-h58" secondAttribute="bottom" constant="8" id="L85-Ds-60K"/>
+                                    <constraint firstItem="r3J-PD-ZsI" firstAttribute="leading" secondItem="POn-hV-N7w" secondAttribute="leadingMargin" constant="14" id="LVc-zw-7f1"/>
                                     <constraint firstItem="Ybo-oe-l9q" firstAttribute="leading" secondItem="POn-hV-N7w" secondAttribute="leading" id="MvO-nq-VyQ"/>
                                     <constraint firstAttribute="trailing" secondItem="Ybo-oe-l9q" secondAttribute="trailing" id="PIk-sZ-WO1"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="OR3-v6-h58" secondAttribute="trailing" constant="14" id="aDS-lv-U5R"/>
                                     <constraint firstItem="Ybo-oe-l9q" firstAttribute="top" secondItem="POn-hV-N7w" secondAttribute="top" id="dgG-24-Aq1"/>
+                                    <constraint firstItem="ji1-WZ-pqv" firstAttribute="top" secondItem="OR3-v6-h58" secondAttribute="bottom" constant="7" id="g86-0w-C5V"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="ji1-WZ-pqv" secondAttribute="trailing" constant="12" id="pBd-Vv-lkY"/>
                                     <constraint firstItem="OR3-v6-h58" firstAttribute="leading" secondItem="POn-hV-N7w" secondAttribute="leadingMargin" constant="14" id="vwb-yl-kix"/>
                                 </constraints>
                                 <connections>
@@ -249,15 +288,6 @@
                                                 <constraint firstAttribute="height" constant="160" id="MIw-i2-RJ9"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.3 MILES NEARBY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3n-zG-isW">
-                                            <rect key="frame" x="20" y="211.33333333333334" width="315" height="12"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="12" id="v14-bQ-i8z"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
-                                            <color key="textColor" red="0.69803921568627447" green="0.69019607843137254" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great place for a picnic!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg2-7g-THN">
                                             <rect key="frame" x="20" y="179" width="315" height="20.333333333333343"/>
                                             <constraints>
@@ -267,17 +297,58 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hpk-Td-R5Q">
+                                            <rect key="frame" x="15" y="208" width="230" height="20"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AMk-Fb-nPG" customClass="RatingsControl" customModule="Harmony" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="61.333333333333336" height="20"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                            <color key="value" red="0.0" green="0.79215686269999996" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="unselectedColor">
+                                                            <color key="value" red="0.60784313729999995" green="0.59999999999999998" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                            <integer key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5/5.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ax-uj-Qqk">
+                                                    <rect key="frame" x="69.333333333333329" y="0.0" width="40.666666666666671" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                                    <color key="textColor" red="0.69803921570000005" green="0.69019607839999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.3 MILES NEARBY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3n-zG-isW">
+                                                    <rect key="frame" x="118" y="0.0" width="112" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                                    <color key="textColor" red="0.69803921568627447" green="0.69019607843137254" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="nlF-A9-0Hd"/>
+                                            </constraints>
+                                        </stackView>
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="C3n-zG-isW" firstAttribute="top" secondItem="gg2-7g-THN" secondAttribute="bottom" constant="12" id="Azj-mm-tWo"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hpk-Td-R5Q" secondAttribute="trailing" constant="90" id="7kp-3h-iGr"/>
+                                    <constraint firstItem="Hpk-Td-R5Q" firstAttribute="top" secondItem="7xE-p6-Ttt" secondAttribute="bottom" constant="48" id="9b0-vp-ZP7"/>
+                                    <constraint firstItem="Hpk-Td-R5Q" firstAttribute="leading" secondItem="TJO-7I-Y9i" secondAttribute="leading" constant="15" id="BYx-Sv-rOc"/>
                                     <constraint firstItem="7xE-p6-Ttt" firstAttribute="top" secondItem="TJO-7I-Y9i" secondAttribute="top" id="Flt-no-3Gy"/>
                                     <constraint firstItem="7xE-p6-Ttt" firstAttribute="leading" secondItem="TJO-7I-Y9i" secondAttribute="leading" id="HYB-C3-WKx"/>
-                                    <constraint firstItem="C3n-zG-isW" firstAttribute="leading" secondItem="TJO-7I-Y9i" secondAttribute="leading" constant="20" id="Iz8-34-IAT"/>
                                     <constraint firstItem="gg2-7g-THN" firstAttribute="leading" secondItem="TJO-7I-Y9i" secondAttribute="leading" constant="20" id="U84-v8-vMD"/>
                                     <constraint firstItem="gg2-7g-THN" firstAttribute="top" secondItem="7xE-p6-Ttt" secondAttribute="bottom" constant="19" id="krL-Mp-QsN"/>
                                     <constraint firstAttribute="trailing" secondItem="gg2-7g-THN" secondAttribute="trailing" id="mAb-Nc-SDx"/>
-                                    <constraint firstAttribute="trailing" secondItem="C3n-zG-isW" secondAttribute="trailing" id="ney-xL-cM6"/>
                                     <constraint firstAttribute="trailing" secondItem="7xE-p6-Ttt" secondAttribute="trailing" id="y5V-Ux-h9L"/>
                                 </constraints>
                                 <connections>
@@ -360,9 +431,6 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="value">
                                                 <integer key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
-                                                <integer key="value" value="0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
