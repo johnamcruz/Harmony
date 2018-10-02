@@ -88,10 +88,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="USe-m3-CY2" customClass="CustomSegmentedControl" customModule="Harmony" customModuleProvider="target">
-                                <rect key="frame" x="16" y="316" width="343" height="29"/>
+                                <rect key="frame" x="16" y="316" width="343" height="61"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="YRc-YS-ZrH"/>
+                                    <constraint firstAttribute="height" constant="60" id="YRc-YS-ZrH"/>
                                 </constraints>
                                 <segments>
                                     <segment title="FAVORITE SPOTS"/>
@@ -100,9 +100,9 @@
                                 <color key="tintColor" red="0.0" green="0.79215686269999996" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bo3-zv-VP2">
-                                <rect key="frame" x="0.0" y="352" width="375" height="377"/>
+                                <rect key="frame" x="0.0" y="384" width="375" height="345"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="377" id="qrA-JJ-65o"/>
+                                    <constraint firstAttribute="height" constant="345" id="qrA-JJ-65o"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="l01-Vl-cB6" kind="embed" id="SBc-eP-0No"/>
@@ -142,7 +142,7 @@
             <objects>
                 <collectionViewController id="l01-Vl-cB6" customClass="LocationViewController" customModule="Harmony" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Uwi-i1-bKS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="377"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="345"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="eHb-IF-2TB">
