@@ -14,7 +14,7 @@ class RatingsControl : UIControl {
     
     @IBInspectable var selectedColor : UIColor = UIColor.greenBlue {
         didSet {
-            
+            updateControl()
         }
     }
     
