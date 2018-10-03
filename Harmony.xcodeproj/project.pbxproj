@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75349B7F2164A5310071B24B /* ActivityControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75349B7E2164A5310071B24B /* ActivityControl.swift */; };
 		7565A9A4216200AF00B29971 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565A9A3216200AF00B29971 /* LocationViewController.swift */; };
 		7565A9A62162058C00B29971 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565A9A52162058C00B29971 /* LocationCell.swift */; };
 		7565A9A8216205DC00B29971 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565A9A7216205DC00B29971 /* CardCell.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75349B7E2164A5310071B24B /* ActivityControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityControl.swift; sourceTree = "<group>"; };
 		7565A9A3216200AF00B29971 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		7565A9A52162058C00B29971 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		7565A9A7216205DC00B29971 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				75CF17102161DD8000005082 /* CustomSegmentedControl.swift */,
 				7566D24A2163473A00928DCE /* RatingsControl.swift */,
+				75349B7E2164A5310071B24B /* ActivityControl.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				75CF170E2161CC2200005082 /* ProfileViewController.swift in Sources */,
 				75CF16F62160A26C00005082 /* UIColor+Additions.swift in Sources */,
 				7566D2472162138800928DCE /* AddressModel.swift in Sources */,
+				75349B7F2164A5310071B24B /* ActivityControl.swift in Sources */,
 				7565A9A8216205DC00B29971 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
