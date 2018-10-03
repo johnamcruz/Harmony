@@ -38,7 +38,7 @@ class ActivityControl : UIControl {
         stackView.alignment = .center
         stackView.spacing = spacing
         
-        for index in 0..<5 {
+        for index in 0..<images.count {
             let button = UIButton(type: .custom)
             button.backgroundColor = UIColor.paleGreyTwo
             button.tintColor = UIColor.slateGrey
